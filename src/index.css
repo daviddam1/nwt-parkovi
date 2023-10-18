@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+* {
+  font-family: Dancing Script, cursive;
+  margin: 0 auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header .header-items {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #2f90a1;
+  margin: 10px 10px 0px 10px;
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
 }
+.header .header-items .navBar {
+  margin: 0px 9rem;
+  cursor: pointer;
+}
+.header .header-items .navBar.active {
+  color: #16567e;
+}
+.header .dropDown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2f90a1;
+  margin: 0 40rem;
+  color: white;
+  font-size: 22px;
+  padding: 1rem;
+}
+.header .dropDown .dropDown-item {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.header .dropDownMenu {
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+.header .dropDownMenu.show {
+  display: block;
+}
+
+.Body {
+  text-align: left;
+  font-size: 22px;
+  padding: 2rem 200px;
+}
+.Body h2 {
+  font-family: Arial;
+}
+.Body .bodyText {
+  padding: 0.5rem 0;
+  font-family: Arial;
+}/*# sourceMappingURL=index.css.map */
